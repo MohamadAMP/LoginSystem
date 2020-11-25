@@ -59,7 +59,7 @@ def expensesHomeScreen():
     return s
 
 def expenses1(sheetName):
-    filepath = "C:/Users/Mohammad/Desktop/LoginSystem/Expenses.xlsx"
+    filepath = "C:/Users/Mohamad/Desktop/Projects/LoginSystem/Expenses.xlsx"
     wb = openpyxl.load_workbook(filepath)
     sheet = wb.get_sheet_by_name(sheetName)
     max_row = sheet.max_row
@@ -78,7 +78,7 @@ def expenses1(sheetName):
     wb.save("Expenses.xlsx")
 
 def expenses2(sheetName):
-    filepath = "C:/Users/Mohammad/Desktop/LoginSystem/Expenses.xlsx"
+    filepath = "C:/Users/Mohamad/Desktop/Projects/LoginSystem/Expenses.xlsx"
     wb = openpyxl.load_workbook(filepath)
     sheet = wb.get_sheet_by_name(sheetName)
     date = input("Enter the date of the day you would like to add expenses to (mm/dd/yyyy): ")

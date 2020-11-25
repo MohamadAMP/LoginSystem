@@ -4,7 +4,7 @@ import Functions as f
 conn = sqlite3.connect('accounts.db')
 c = conn.cursor()
 
-filepath = "C:/Users/Mohamad/Desktop/LoginSystem/Expenses.xlsx"
+filepath = "C:/Users/Mohamad/Desktop/Projects/LoginSystem/Expenses.xlsx"
 wb = openpyxl.load_workbook(filepath)
 
 print("Hello! Thank you for using ... to organize your day and track your expenses!")
@@ -72,6 +72,8 @@ while v:
                 f.expenses2(sheetName)
             else:
                 m = False
+    else:
+        v = False
 
 #c.execute(("SELECT * FROM accounts"))
 #print(c.fetchall())
